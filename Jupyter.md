@@ -17,11 +17,11 @@ After downloading, then run the image.
 docker run -it --rm -p 8888:8888 jupyter/pyspark-notebook
 ```
 A quick breakdown of this command.
-```docker run``` tells Docker to run an image as a container.
-```-it``` Runs the container with an Interactive Terminal so we can see the debug messages from Jupyter.
-```--rm``` Delete the container after it exists.  By default Docker will save a copy of every container just in case you wanted to restart it.
-```-p 8888:8888``` Exposes the container's port 8888 to the host pc's port 8888.  If your host PC is already using port 8888, you can map it to any other available port your would like such as 12345 by amending the command to ```-p 8888:12345```.
-There are many, many more options available in the Docker run command.  For a complete list visit the [Documentation](https://docs.docker.com/engine/reference/commandline/run/)
+<br />```docker run``` tells Docker to run an image as a container.
+<br />```-it``` Runs the container with an Interactive Terminal so we can see the debug messages from Jupyter.
+<br />```--rm``` Delete the container after it exists.  By default Docker will save a copy of every container just in case you wanted to restart it.
+<br />```-p 8888:8888``` Exposes the container's port 8888 to the host pc's port 8888.  If your host PC is already using port 8888, you can map it to any other available port your would like such as 12345 by amending the command to ```-p 8888:12345```.
+<br />There are many, many more options available in the Docker run command.  For a complete list visit the [Documentation](https://docs.docker.com/engine/reference/commandline/run/)
 
 When it starts you will see quite a bit of text printed to the terminal window.  At the bottom you should see a link that looks something like http://127.0.0.1:8888/?token=651626542999e384023e1b9f06a73d5826cf65e4eabf8be4.  Your token will be different everytime you start a notebook.  Just copy the full link, and paste it in your browser.
 
